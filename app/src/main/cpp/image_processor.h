@@ -1,8 +1,21 @@
-//
-// Created by VINU on 13-11-2025.
-//
+#ifndef IMAGE_PROCESSOR_H
+#define IMAGE_PROCESSOR_H
 
-#ifndef EDGEDETECTIONAPP_IMAGE_PROCESSOR_H
-#define EDGEDETECTIONAPP_IMAGE_PROCESSOR_H
+#include <jni.h>
+#include <vector>
 
-#endif //EDGEDETECTIONAPP_IMAGE_PROCESSOR_H
+extern "C" {
+
+// JNI function for processing image data
+JNIEXPORT jbyteArray JNICALL
+Java_com_example_edgedetection_MainActivity_nativeProcessImage(
+        JNIEnv *env,
+        jobject thiz,
+        jbyteArray input_,
+        jint width,
+        jint height
+);
+
+}
+
+#endif // IMAGE_PROCESSOR_H
