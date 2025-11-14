@@ -1,3 +1,11 @@
+
+
+--------------------------------------------------
+https://github.com/VINANTH-H/EdgeDetectionApp (Access This Link for teh Project)
+--------------------------------------------------
+
+
+
 Real-Time Edge Detection App (Android + Web)
 
 This project provides real-time camera-based edge detection using OpenGL ES, OpenCV, and JNI on Android, along with a companion web interface built using TypeScript.
