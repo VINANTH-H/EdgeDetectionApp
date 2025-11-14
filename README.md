@@ -6,33 +6,33 @@ It demonstrates GPU-accelerated image processing, native C++ integration, and cr
 🚀 Features Implemented
 ✅ Android App
 
-Real-time camera feed using Camera2 API
+1. Real-time camera feed using Camera2 API
 
-OpenGL ES–based rendering pipeline
+2. OpenGL ES–based rendering pipeline
 
-Native C++ edge detection using OpenCV
+3. Native C++ edge detection using OpenCV
 
-Zero-copy frame transfer using SurfaceTexture
+4 .Zero-copy frame transfer using SurfaceTexture
 
-JNI bridge to call C++ functions from Kotlin/Java
+5 .JNI bridge to call C++ functions from Kotlin/Java
 
-FPS-optimized processing
+6 .FPS-optimized processing
 
-Custom shaders for edge visualization
+7. Custom shaders for edge visualization
 
 🌐 Web App
 
-TypeScript + WebGL implementation of edge detection
+1.TypeScript + WebGL implementation of edge detection
 
-Live webcam capture in browser
+2.Live webcam capture in browser
 
-GLSL shader-based Sobel edge filter
+3.GLSL shader-based Sobel edge filter
 
-Clean UI with result preview
+4.Clean UI with result preview
 
-Same shader logic used on both platforms for consistency
+5.Same shader logic used on both platforms for consistency
 
-Setup Instructions
+6.Setup Instructions
 
 🟩 Android Setup
 
@@ -92,17 +92,17 @@ Texture → JNI → C++ (OpenCV) → Processed Frame → GL Renderer
 
 Step-by-step
 
-Camera2 writes frames into a SurfaceTexture
+1.Camera2 writes frames into a SurfaceTexture
 
-SurfaceTexture updates an external OES texture
+2.SurfaceTexture updates an external OES texture
 
-Vertex & fragment shaders draw the camera texture
+3.Vertex & fragment shaders draw the camera texture
 
-JNI passes the frame to C++ if CPU processing is needed
+4.JNI passes the frame to C++ if CPU processing is needed
 
-C++ uses OpenCV to perform edge detection (Sobel / Canny)
+5.C++ uses OpenCV to perform edge detection (Sobel / Canny)
 
-The processed texture is drawn back on the GLSurfaceView
+6.The processed texture is drawn back on the GLSurfaceView
 
 Your shader fix (example):
 
